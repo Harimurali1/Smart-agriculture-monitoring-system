@@ -180,7 +180,7 @@ void sendSMS(String message) {
   gprsSerial.println("AT+CMGF=1"); // Set SMS mode
   delay(1000);
   
-  gprsSerial.println("AT+CMGS=\"+918121066878\""); // Specify the phone number
+  gprsSerial.println("AT+CMGS=\"+91xxxxxxxxxx\""); // Specify the phone number
   delay(1000);
   
   gprsSerial.print(message); // Message content
