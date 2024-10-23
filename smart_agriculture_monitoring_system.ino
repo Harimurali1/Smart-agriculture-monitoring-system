@@ -153,7 +153,7 @@ void loop() {
   ShowSerialData();
   
   // Send pH and moisture data to ThingSpeak
-  String str = "GET https://api.thingspeak.com/update?api_key=OXTED0516ECSHNOZ&field1=" + String(Temperature) + "&field2=" + String(Humidity) + "&field3=" + String(Moisture) + "&field4=" + String(phValue);
+  String str = "GET https://api.thingspeak.com/update?api_key=?&field1=" + String(Temperature) + "&field2=" + String(Humidity) + "&field3=" + String(Moisture) + "&field4=" + String(phValue);
   Serial.println(str);
   gprsSerial.println(str); // send data to remote server
   
